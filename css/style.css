@@ -11,7 +11,8 @@
   font-size: 40px;
   font-weight: normal; }
 .wrapper .container h2 {
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 35px; }
 .wrapper .container .row {
   display: flex;
   flex-direction: row;
