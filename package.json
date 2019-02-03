@@ -4,7 +4,9 @@
   "description": "https://web-ski.github.io/learning-git-3/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run watch:browsersync",
+    "watch:browsersync": "node_modules/.bin/browser-sync start -s -f css/*.css *.html"
   },
   "keywords": [],
   "author": "",
