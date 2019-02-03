@@ -1,7 +1,7 @@
 {
   "name": "learning-npm",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://web-ski.github.io/learning-git-3/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,13 @@
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
     "nu-html-checker": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-ski/learning-git-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Web-ski/learning-git-3/issues"
+  },
+  "homepage": "https://github.com/Web-ski/learning-git-3#readme"
 }
