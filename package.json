@@ -8,10 +8,11 @@
     "build": "npm run build:clean && npm run build:sass",
     "build:clean": "rm -rf css/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
-    "watch": "npm-run-all -p watch:*",
+    "watch": "npm-run-all -p watch:browsersync watch:sass watch:autoprefixer",
     "watch:browsersync": "node_modules/.bin/browser-sync start -s -f css/*.css *.html",
-    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
-    "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css"
+    "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all watch:sass watch:autoprefixer",
+    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch:autoprefixer": "autoprefixer-cli -o css/style.css css/style.css"
   },
   "keywords": [],
   "author": "",
