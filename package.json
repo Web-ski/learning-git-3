@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run watch:browsersync",
-    "watch:browsersync": "node_modules/.bin/browser-sync start -s -f css/*.css *.html"
+    "watch:browsersync": "node_modules/.bin/browser-sync start -s -f css/*.css *.html",
+    "build": "npm run build:clean && npm run build:sass",
+    "build:clean": "rm -rf css/*.css",
+    "build:sass": "node-sass --output-style compact -o css sass"
   },
   "keywords": [],
   "author": "",
